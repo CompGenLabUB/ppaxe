@@ -5,14 +5,16 @@
 
 -----
 
-Tool to retrieve **protein-protein interactions** and calculate protein/gene symbol ocurrence in the scientific literature (PubMed & PubMedCentral).
+Tool to retrieve **protein-protein interactions** and calculate protein/gene symbol ocurrence in the scientific literature (PubMed & PubMedCentral). Contains two python modules (`core` and `report`), and a python script (`ppaxe`).
+
+Available for `python 2.7` and `python 3.x`, and also as a standalone [docker image](https://hub.docker.com/r/compgenlabub/ppaxe/).
 
 
 ## Usage
 
 ### ppaxe classes
 
-```py
+```python
 from ppaxe import core as ppcore
 from ppaxe import report
 
@@ -132,7 +134,7 @@ java -mx10000m -cp ./stanford-corenlp-3.8.0.jar:stanford-english-corenlp-2017-06
 
 * **Use the ppaxe package**
 
-```py
+```python
 from ppaxe import core as ppcore
 from pycorenlp import StanfordCoreNLP
 
